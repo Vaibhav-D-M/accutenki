@@ -1,6 +1,6 @@
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
-const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRINDAY', 'SATURDAY'];
+const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
