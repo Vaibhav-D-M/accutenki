@@ -1,5 +1,6 @@
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
+const today = document.getElementById('td');
 const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const container = document.querySelector('.container');
@@ -22,6 +23,7 @@ setInterval(() => {
 
     timeEl.innerHTML = (hour < 10 ? '0' + hour : hour) + ':' + (minute < 10 ? '0' + minute : minute) + ' ' + `<span id="am-pm">${ampm}</span>`;
     dateEl.innerHTML = days[day] + ', ' + date + ' ' + months[month];
+    today = days[day];
 
 }, 1000);
 
